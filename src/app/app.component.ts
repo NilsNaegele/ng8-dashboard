@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng8-admin-dashboard';
+  // @HostBinding('class.mdl-layout__header-row') protected readonly mdlLayoutHeaderRow = true;
 }

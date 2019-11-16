@@ -1,0 +1,11 @@
+@import '../../../theme/helpers';
+
+.mdl-navigation base-menu-item:nth-child(2) i.material-icons {
+    transform: rotate(180deg);
+  }
+
+@media screen and (max-width: $layout-screen-size-threshold) {
+  .mdl-layout__header {
+    display: flex !important;
+  }
+}
