@@ -50,6 +50,7 @@ import { WeatherComponent } from './core/weather/weather.component';
 import { DataTableComponent } from './core/data-table/data-table.component';
 import { TrendingActivitiesComponent } from './core/trending-activities/trending-activities.component';
 import { CubeCardComponent } from './core/cube-card/cube-card.component';
+import { MountEverestCardComponent } from './core/mount-everest-card/mount-everest-card.component';
 
 const SHARED_MODULES = [
   CommonModule,
@@ -98,7 +99,8 @@ const SHARED_MODULES = [
     WeatherComponent,
     DataTableComponent,
     TrendingActivitiesComponent,
-    CubeCardComponent
+    CubeCardComponent,
+    MountEverestCardComponent
   ],
   imports: [
     BrowserModule,
