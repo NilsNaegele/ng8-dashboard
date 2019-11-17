@@ -1,5 +1,13 @@
 @import '../../../theme/helpers';
 
+.title {
+  cursor: pointer;
+}
+
+.title:focus {
+  outline: 0;
+}
+
 .mdl-navigation base-menu-item:nth-child(2) i.material-icons {
     transform: rotate(180deg);
   }

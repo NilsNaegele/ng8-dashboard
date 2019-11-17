@@ -11,8 +11,10 @@ import { CardMenuComponent } from './layout/card/card-menu.component';
 import { CardBodyComponent } from './layout/card/card-body.component';
 import { CardActionsComponent } from './layout/card/card-actions.component';
 import { HomeComponent } from './core/home/home.component';
-// import {  BaseChartComponent, PieChartComponent } from './core/charts/pie-chart/pie-chart.component';
+import {  PieChartComponent } from './core/charts/pie-chart/pie-chart.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 import { MatDividerModule } from '@angular/material/divider';
 import { MatBadgeModule } from '@angular/material/badge';
@@ -44,6 +46,10 @@ import { MatTreeModule } from '@angular/material/tree';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { WeatherComponent } from './core/weather/weather.component';
+import { DataTableComponent } from './core/data-table/data-table.component';
+import { TrendingActivitiesComponent } from './core/trending-activities/trending-activities.component';
+import { CubeCardComponent } from './core/cube-card/cube-card.component';
 
 const SHARED_MODULES = [
   CommonModule,
@@ -88,7 +94,11 @@ const SHARED_MODULES = [
     CardBodyComponent,
     CardActionsComponent,
     HomeComponent,
-    // PieChartComponent
+    PieChartComponent,
+    WeatherComponent,
+    DataTableComponent,
+    TrendingActivitiesComponent,
+    CubeCardComponent
   ],
   imports: [
     BrowserModule,
@@ -96,6 +106,7 @@ const SHARED_MODULES = [
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
+    NgxChartsModule,
     ...SHARED_MODULES
   ],
   providers: [],

@@ -5,27 +5,28 @@ import { Injectable } from '@angular/core';
 })
 export class PieChartService {
   public getDaySchedule() {
-    return [
+    return { myDay: [
       {
-        key: 'Coding',
-        hours: 9,
+        name: 'Coding',
+        value: 6
       },
       {
-        key: 'Eating',
-        hours: 3,
+        name: 'Eating',
+        value: 1
       },
       {
-        key: 'Sleeping',
-        hours: 3,
+        name: 'Sleeping',
+        value: 8,
       },
       {
-        key: 'Meditation',
-        hours: 3,
+        name: 'Meditation',
+        value: 1,
       },
       {
-        key: 'FIGHT against EVIL',
-        hours: 6,
+        name: 'Fighting Evil',
+        value: 6
       },
-    ];
+    ]
+  };
   }
 }

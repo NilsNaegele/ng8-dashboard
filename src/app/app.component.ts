@@ -1,4 +1,5 @@
 import { Component, HostBinding } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,13 @@ import { Component, HostBinding } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng8-admin-dashboard';
-  // @HostBinding('class.mdl-layout__header-row') protected readonly mdlLayoutHeaderRow = true;
+  // @HostBinding('class.mdl-layout__header-row') public readonly mdlLayoutHeaderRow = true;
+
+  constructor(private router: Router) {
+  }
+
+  navigate(destination: string): void {
+    this.router.navigate([destination]);
+  }
+
 }
