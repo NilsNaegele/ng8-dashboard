@@ -51,6 +51,7 @@ import { DataTableComponent } from './core/data-table/data-table.component';
 import { TrendingActivitiesComponent } from './core/trending-activities/trending-activities.component';
 import { CubeCardComponent } from './core/cube-card/cube-card.component';
 import { MountEverestCardComponent } from './core/mount-everest-card/mount-everest-card.component';
+import { LineChartComponent } from './core/charts/line-chart/line-chart.component';
 
 const SHARED_MODULES = [
   CommonModule,
@@ -100,7 +101,8 @@ const SHARED_MODULES = [
     DataTableComponent,
     TrendingActivitiesComponent,
     CubeCardComponent,
-    MountEverestCardComponent
+    MountEverestCardComponent,
+    LineChartComponent
   ],
   imports: [
     BrowserModule,

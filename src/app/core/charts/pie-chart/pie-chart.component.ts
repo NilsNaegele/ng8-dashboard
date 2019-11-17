@@ -39,13 +39,10 @@ export class PieChartComponent implements OnInit {
 
     constructor(private pieChartService: PieChartService) {
         Object.assign(this, this.pieChartService.getDaySchedule());
-    //   console.log({myDay});
     }
 
     ngOnInit() {
-        // this.myDay = this.pieChartService.getDaySchedule();
-        // this.myDay = {myDay};
-        // console.log(this.myDay);
+
     }
 
     onSelect(event) {
