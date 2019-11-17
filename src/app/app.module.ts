@@ -52,6 +52,7 @@ import { TrendingActivitiesComponent } from './core/trending-activities/trending
 import { CubeCardComponent } from './core/cube-card/cube-card.component';
 import { MountEverestCardComponent } from './core/mount-everest-card/mount-everest-card.component';
 import { LineChartComponent } from './core/charts/line-chart/line-chart.component';
+import { TodoListComponent } from './core/todo-list/todo-list.component';
 
 const SHARED_MODULES = [
   CommonModule,
@@ -102,7 +103,8 @@ const SHARED_MODULES = [
     TrendingActivitiesComponent,
     CubeCardComponent,
     MountEverestCardComponent,
-    LineChartComponent
+    LineChartComponent,
+    TodoListComponent
   ],
   imports: [
     BrowserModule,
