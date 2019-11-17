@@ -15,7 +15,9 @@ import {  PieChartComponent } from './core/charts/pie-chart/pie-chart.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { NgxChartsModule } from '@swimlane/ngx-charts';
-
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -56,9 +58,14 @@ import { TodoListComponent } from './core/todo-list/todo-list.component';
 import { SupportDialogComponent } from './core/dialogs/support-dialog/support-dialog.component';
 import { TableCardComponent } from './core/table-card/table-card.component';
 import { ProgressComponent } from './core/progress/progress.component';
+import { NotificationMenuComponent } from './core/notification-menu/notification-menu.component';
+import { MessageMenuComponent } from './core/message-menu/message-menu.component';
 
 const SHARED_MODULES = [
   CommonModule,
+  MatTableModule,
+  MatPaginatorModule,
+  MatSortModule,
   MatToolbarModule,
   MatCardModule,
   MatIconModule,
@@ -110,7 +117,9 @@ const SHARED_MODULES = [
     TodoListComponent,
     SupportDialogComponent,
     TableCardComponent,
-    ProgressComponent
+    ProgressComponent,
+    NotificationMenuComponent,
+    MessageMenuComponent
   ],
   imports: [
     BrowserModule,
