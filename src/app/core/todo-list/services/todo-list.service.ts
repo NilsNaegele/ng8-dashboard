@@ -26,6 +26,11 @@ export class TodoListService {
         id: 9753101923,
         completed: false,
       },
+      {
+        title: 'Make new design',
+        id: 3124569870,
+        completed: false,
+      },
     ];
   }
 }

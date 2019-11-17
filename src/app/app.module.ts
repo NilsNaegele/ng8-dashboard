@@ -53,6 +53,7 @@ import { CubeCardComponent } from './core/cube-card/cube-card.component';
 import { MountEverestCardComponent } from './core/mount-everest-card/mount-everest-card.component';
 import { LineChartComponent } from './core/charts/line-chart/line-chart.component';
 import { TodoListComponent } from './core/todo-list/todo-list.component';
+import { SupportDialogComponent } from './core/dialogs/support-dialog/support-dialog.component';
 
 const SHARED_MODULES = [
   CommonModule,
@@ -104,7 +105,8 @@ const SHARED_MODULES = [
     CubeCardComponent,
     MountEverestCardComponent,
     LineChartComponent,
-    TodoListComponent
+    TodoListComponent,
+    SupportDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -115,6 +117,7 @@ const SHARED_MODULES = [
     NgxChartsModule,
     ...SHARED_MODULES
   ],
+  entryComponents: [ SupportDialogComponent ],
   providers: [],
   bootstrap: [AppComponent]
 })
