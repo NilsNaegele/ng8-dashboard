@@ -54,6 +54,8 @@ import { MountEverestCardComponent } from './core/mount-everest-card/mount-evere
 import { LineChartComponent } from './core/charts/line-chart/line-chart.component';
 import { TodoListComponent } from './core/todo-list/todo-list.component';
 import { SupportDialogComponent } from './core/dialogs/support-dialog/support-dialog.component';
+import { TableCardComponent } from './core/table-card/table-card.component';
+import { ProgressComponent } from './core/progress/progress.component';
 
 const SHARED_MODULES = [
   CommonModule,
@@ -106,7 +108,9 @@ const SHARED_MODULES = [
     MountEverestCardComponent,
     LineChartComponent,
     TodoListComponent,
-    SupportDialogComponent
+    SupportDialogComponent,
+    TableCardComponent,
+    ProgressComponent
   ],
   imports: [
     BrowserModule,
