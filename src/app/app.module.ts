@@ -60,6 +60,10 @@ import { TableCardComponent } from './core/table-card/table-card.component';
 import { ProgressComponent } from './core/progress/progress.component';
 import { NotificationMenuComponent } from './core/notification-menu/notification-menu.component';
 import { MessageMenuComponent } from './core/message-menu/message-menu.component';
+import { LoginComponent } from './core/login/login.component';
+import { ForgotPasswordComponent } from './core/login/forgot-password/forgot-password.component';
+import { SignUpComponent } from './core/login/sign-up/sign-up.component';
+import { BlankLayoutCardComponent } from './core/login/blank-layout-card.component';
 
 const SHARED_MODULES = [
   CommonModule,
@@ -119,7 +123,11 @@ const SHARED_MODULES = [
     TableCardComponent,
     ProgressComponent,
     NotificationMenuComponent,
-    MessageMenuComponent
+    MessageMenuComponent,
+    LoginComponent,
+    ForgotPasswordComponent,
+    BlankLayoutCardComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
